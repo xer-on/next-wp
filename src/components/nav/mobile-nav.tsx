@@ -7,15 +7,15 @@ import { useRouter } from "next/navigation";
 
 // Utility Imports
 import { Menu, ArrowRightSquare } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 // Component Imports
-import { Button } from "@/components/ui/button";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Separator } from "@/components/ui/separator";
+import { Button } from "../ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 
 import { mainMenu, contentMenu } from "@/menu.config";
+import { cn } from "@/src/lib/utils";
+import { ScrollArea } from "../ui/scroll-area";
+import { Separator } from "../ui/separator";
 
 export function MobileNav() {
   const [open, setOpen] = React.useState(false);

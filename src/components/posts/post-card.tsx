@@ -1,14 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { Post } from "@/lib/wordpress.d";
-import { cn } from "@/lib/utils";
+import { Post } from "@/src/lib/wordpress.d";
 
 import {
   getFeaturedMediaById,
   getAuthorById,
   getCategoryById,
-} from "@/lib/wordpress";
+} from "@/src/lib/wordpress";
+import { cn } from "@/src/lib/utils";
 
 export default async function PostCard({ post }: { post: Post }) {
   const media = await getFeaturedMediaById(post.featured_media);

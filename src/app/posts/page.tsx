@@ -3,7 +3,7 @@ import {
   getAllAuthors,
   getAllTags,
   getAllCategories,
-} from "@/lib/wordpress";
+} from "@/src/lib/wordpress";
 
 import {
   Pagination,
@@ -12,10 +12,10 @@ import {
   PaginationLink,
   PaginationNext,
   PaginationPrevious,
-} from "@/components/ui/pagination";
+} from "@/src/components/ui/pagination";
 
-import { Section, Container } from "@/components/craft";
-import PostCard from "@/components/posts/post-card";
+import { Section, Container } from "@/src/components/craft";
+import PostCard from "@/src/components/posts/post-card";
 import FilterPosts from "./filter";
 
 export default async function Page({
